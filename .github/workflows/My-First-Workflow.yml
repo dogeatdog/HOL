@@ -2,6 +2,10 @@ name: Workflow-1
 on: 
   workflow_dispatch:
     inputs:
+      environment:
+        description: 'Environment we are going to deploy in'
+        type: environment
+        required: true
       Name:
         description: input the name
         required: true
